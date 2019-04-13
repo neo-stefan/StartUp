@@ -18,3 +18,6 @@
 # available
 
 ### git log will display all your commits 
+### git checkout and first seven digits of the commit (get this in the 
+# log) we want to go back 
+# to will show us the previous commit  
