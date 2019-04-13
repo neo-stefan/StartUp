@@ -17,4 +17,4 @@
 # different version and stuff saved with the previous saved commit still 
 # available
 
-
+### git log will display all your commits 
