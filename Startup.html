@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <link rel="stylesheet" href="Startup.css">
+        <title>My CSS startup site</title>
+    </head>
+    <body>
+        <nav>
+            <!--nav is the navbar-->
+            <ul class="topnav" id="ulList">
+                <!--to place links in a list item use a tag-->
+                <li><a href="HomeURL">Home</a></li>
+                <li><a href="#AboutURL">About</a></li>
+                <li><a href="ContactURL">Contact</a></li>
+                <li><a href="#ArticlesURL">Articles</a></li>
+                <!--to make or diffrentiate between items we want to float left and right we used a class-->
+                <li class="topnav-right"><a href="SignUpURL">Sign Up</a></li>
+                <li class="topnav-right"><a href="#SignInURL">Sign In</a></li>
+                <!--to make our site mobile responsive such that if the width shrinks the list items compress into a menu of sorts we use a unicode like the one below-->
+                <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownAction()">&#9776;</a></li>
+                <!--in the code up top we set the onclick of the dropdownIcon to call on the script function we wrote-->
+                <!--when we click the dropdownicon it doesn't stay for long to make sure it stays for long we implement an undefined javascript code in href-->
+            </ul>
+        </nav>
+        
+        <div class="container" id="container1">
+            <div class="row">
+                <div class="col-6">
+                    <!--best practice to wrap your contents in div tags so in the future if you want to style them some more just add a class or id then go to css-->
+                    <div class="leftside-col">
+                        <h1 class="large">Estudiar</h1>
+                        <h1 class="large">Made for Scholars</h1>
+                   <form>
+                     <div>
+                        <h2>Username</h2>
+                        <input class="inputbox" name="Username" type="text" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class="inputbox" name="Password" type="text" placeholder="Password">
+                    </div>
+                   </form>
+                    </div>
+                </div>
+            <div class="col-6">
+                <div class="rightside-col">
+                    <video  class="mediakept"src="E://Bohemian_Rhapsody_(2018)_BRRip_high_(fzmovies.net).mp4" width="460px" height="460px"></video>
+                    <!--though we could use iframes to embed a youtube video-->
+                </div>
+            </div>
+           </div>
+        </div>
+        <header>
+            <h1 class="section2header">The Standard of Scholars</h1>
+            <!--header tag is used for intro content or writings we could use a div tag but header is better for classification-->
+        </header>
+        <div class="container">
+         <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="E://Beginner Full Stack Web Development HTML, CSS, React & Node/[Tutsgalaxy.com] - Beginner Full Stack Web Development HTML, CSS, React & Node/5. Advanced CSS Building and styling website/devIcon.png">
+                    </div>
+                    <label>Chat with Us</label>
+                    <!--labels are used in boxes as headers and for description titles-->
+                    <p>
+                        Basically this is where some text goes on how to contact us
+                    </p>
+                </div>
+            </div>
+              <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="E://Beginner Full Stack Web Development HTML, CSS, React & Node/[Tutsgalaxy.com] - Beginner Full Stack Web Development HTML, CSS, React & Node/5. Advanced CSS Building and styling website/devIcon.png">
+                    </div>
+                    <label>Learn Anything</label>
+                    <!--labels are used in boxes as headers and for description titles-->
+                    <p>
+                        Basically this is where some text goes on how to contact us
+                    </p>
+               </div>
+             </div>
+              <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="E://Beginner Full Stack Web Development HTML, CSS, React & Node/[Tutsgalaxy.com] - Beginner Full Stack Web Development HTML, CSS, React & Node/5. Advanced CSS Building and styling website/devIcon.png">
+                     </div>
+                     <label>Knowledge is power</label>
+                     <!--labels are used in boxes as headers and for description titles-->
+                     <p>
+                        Basically this is where some text goes on how to contact us
+                     </p>
+                </div>   
+             </div>
+            </div>
+             <div class="row">
+                 <div class="col-12">
+                     <button class="btnLearn">Learn More</button>
+                 </div>
+             </div>
+           
+        </div>
+             <hr>
+             <!--just making a horizontal line to divide the site make a diffrentiation of sorts-->
+             <div class="container">
+                <div class="row">
+                 <div class="col-7">
+                     <!--just using a different way with columns-->
+                     <!--not cause we want the text to occupy a higher width size on the container thus the col-7 tag-->
+                     <article>
+                         <!--this is the selector used when we want to input blog posts news articles just journalism info-->
+                         <p>
+                             Lorem Ipsum; 
+                             it is just one latin text I got just from using estudiar, the instructors, course content and students on this platform are really helpful giving a rating of 20 stars which I could give more :) lol.
+                             Justin Burke
+                         </p>
+                     </article>
+                 </div>
+                 <div class="col-5">
+                     <div class="iosicon">
+                         <img src="E://Beginner Full Stack Web Development HTML, CSS, React & Node/[Tutsgalaxy.com] - Beginner Full Stack Web Development HTML, CSS, React & Node/5. Advanced CSS Building and styling website/iOS_Slope.png">
+                     </div>
+                 </div>
+                </div>
+             </div>
+        <footer class="foots">
+            <div class="row">
+            <!--footer is a container on it's own with it's own defaults-->
+            <div class="col-3 col3specific">
+             <h1>Company</h1>
+             <!--by default h1 tags have a display of block-->
+             <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Courses</li>
+             </ul>
+            </div>
+            <div class="col-3 col3specific">
+             <h1>Company</h1>
+             <!--by default h1 tags have a display of block-->
+             <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Courses</li>
+             </ul>
+            </div>
+            <div class="col-3 col3specific">
+             <h1>Company</h1>
+             <!--by default h1 tags have a display of block-->
+             <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Courses</li>
+             </ul>
+            </div>
+            <div class="col-3 col3specific">
+             <h1>Company</h1>
+             <!--by default h1 tags have a display of block-->
+             <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Courses</li>
+             </ul>
+            </div>
+            </div>
+        </footer>
+        
+        
+        <script>
+            function dropdownAction(){
+                /*we made a javascript function to handle the dropdownIcon when clicked it is his function we link to the a tag onclick*/
+                var x = document.getElementById("ulList");
+                /*we set a variable x to an html object in this case the ul list*/
+                if(x.className === "topnav"){
+                    /*this is the condition statement which says that if the var x classname is topnav we are adding the classname responsive to it*/
+                    x.className += " responsive"
+                   }
+                else{
+                    /*else we leave it like that*/
+                    x.className = "topnav"
+                }
+                
+            }
+        </script>
+    </body>
+</html>

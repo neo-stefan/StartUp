@@ -1,0 +1,316 @@
+/*############## DEFAULTS ##################*/
+nav,header,footer{
+    display: block;
+}
+body{
+    /*line height is the dist between the up text from the down text no need to put unit*/
+    line-height: 1;
+    margin: 0;
+}
+
+.container{
+    /*this container is the first bar/section after the nav bar*/
+    width: 100%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    margin: auto;
+    /*the padding is very important as it puts the color within*/
+    display: block;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /*flex wrap just means that all the contents are wrapped around the flex display and aligned at the center*/
+    align-items: center;
+    /*what the flex display does is to make the row to be flexible such that the contents are easily adjustable with different screen sizes*/
+}
+.row::after{
+    /*action done after the row is made*/
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+label{
+    /*since label is a default element we will use constantly
+    in boxes best to make it have a default style*/
+    font-size: 35px;
+    font-weight: 600;
+    /*font weight is basically how thick you want the text it has a bold option too*/
+}
+p {
+   font-size: 25px; 
+   line-height: 1.2;
+}
+article p {
+    /*we are putting this in defaults as it is the first one we are having so styling it now is good so any time it is used in the html the style here is used*/
+    font-size: 35px;
+    /*we used padding for the dist between the text in here and the website end cause using margin here will affect the element beside this one but padding will work on the inside to create the space*/
+    padding: 20px;
+}
+
+* {
+    /*this basically means to all selectors and properties*/
+    box-sizing: border-box;
+    /*box sizing just means how we want all the contents to fit border-box means within their specified dimensions*/
+}
+/*################# CUSTOM STYLES ###################*/
+#container1{
+    /*since we want to use that container class for all the various bars on the site we will use id's for specification*/
+    background: linear-gradient(aqua,purple);
+}
+.large{
+    color: aliceblue;
+    font-size: 30px;
+    margin: 0;
+    line-height: 40px;
+    /*this class handles the text color and font size it is better to use line height for dist between 2 texts than margin*/
+}
+form h2{
+    font-size: 20px;
+    color: aliceblue;
+}
+input[type="text"]{
+    /*this is an attribute selector we are selecting the input of type text*/
+    font-size: 20px;
+    color: black;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+div.leftside-col{
+    /*this will make the first col to be towards the left by 30% of the screen size*/
+    margin-left: 30%;
+}
+div.rightside-col{
+    margin: 15%;
+}
+header h1.section2header{
+    font-size: 65px;
+    text-align: center;
+    /*by default header tags have display of block so to center their content we just use text-align as the header tag doesn't take other forms like img video etc */
+}
+div.box{
+    background-color: white;
+    /*box-shadow refers to the box's shadow first zero horizontal length in px second is vertical length third is blur radius how far the shadow blur will go fourth 1px spread radius how far the shadow will spread black shadow color white background color white box color if we set a background color no need for the first white we change it to 0, 0.25px is the opacity but i used rgb coloring which i set to 0 changing black before, 0 first white 0 second white the a is for opacity thus 0.25px is still in*/
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.25px);
+    /*to align items to the center of the box we used text align and it aligned the images too*/
+    text-align: center;
+    margin: 24px;
+    /*this means the space round the box should be 24px but 2 boxes side by side will have 48px space between them*/
+    padding: 36px 24px 40px 24px;
+    /*padding top right bottom left that is how the values are going*/
+    border-radius: 7px;
+}
+div.icon{
+    width: 100%;
+    /*this makes sure that the icon is always 100% of the whole screen*/
+}
+
+button {
+    font-size: 35px;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+    background-color: purple;
+    margin: 15px 60px;/*this is for top and bottom putting just 2 values does that*/
+    border-radius: 7px;
+    text-align: center;
+    padding: 5px;
+}
+
+button.btnLearn{
+    /*to center the button setting the display of block means we want it to be directly nderneath the previous elements margin of auto to be in the center*/
+    display: block;
+    margin: auto;
+}
+div.iosicon img {
+    display: block;
+    margin: auto;
+    /*just centering th img in the column*/
+    /*we added a box shadow to deal with th white box merging with the white background*/
+    box-shadow: -2px -2px 17px 2px rgba(0/*shadow color*/,0/*background color*/,0/*box color*/,1);
+    border-radius: 7px;
+}
+
+footer.foots{
+    background-color: purple;
+    /*we used padding cos we want the contents to be shifted not the whole footer padding dealt with space within but using margin it will deal with space outside*/
+    padding-left: 10%;
+}
+
+footer.foots h1{
+    font-size: 35px;
+    font-weight: 900;
+    margin: 0;
+    color: white;
+}
+
+footer.foots ul {
+    /*this will remove the numbering on the list items*/
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+footer.foots ul li {
+    /*best to style the list items seperately from the ul*/
+    color: white;
+    line-height: 1.5;
+}
+
+/*################# NAV BAR ########################*/
+nav{
+    /*setting the width to 100% makes sure that t takes up the whole screen width*/
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: aqua;
+    /*the reason we set the margin and padding is because browsers have their own defaults and we don't want them*/
+    margin: 0;
+    padding: 0;
+    /*to prevent side-side scrolling we set the overflow to hidden*/
+    overflow: hidden;
+}
+nav ul.topnav li{
+    /*we are making the first four items on the list to float on the left but since we still want all items in the ul to have a list style of none thus ul.topnav handles it but we could put float: left here since we specified a diff class for items we want to float right*/
+    list-style: none;
+    float: left;
+}
+nav ul li.topnav-right{
+    /*for the items that have the class we want to place on the right*/
+    float: right;
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    /*instead of font size we could use min height which just means that the text/font height won't pass that value*/
+    font-size: 18px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: cornflowerblue;
+}
+ul.topnav li a:hover{
+    /*we are creating a hover effect that is any time the cursor is on an item on the list to create action after selecting the element use colon to specify the action type*/
+    background-color: black;
+    /*the color property we put if not specified is text color*/
+    color: aqua;
+}
+nav ul li.dropdownIcon{
+    /*we are just making the drop down icon not visible as we do not want to always view the drop dowb icon*/
+    display: none;
+}
+
+/*############# MOBILE ###############*/
+@media screen and (max-width:680px){
+    /*this basically means that at a screen width <= 680px it should do the following*/
+    nav ul li:not(:nth-child(1)){
+        /*doing this it sets all the li items to not display so to make sure that one preferrably the home one still shows we make an action*/
+        display: none;
+    }
+    nav ul li.dropdownIcon{
+        /*we are then making the dropdown to appear in the mobile state and setting it to float on the right*/
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive{
+        /*ul.topnav.responsive is a new selector we made when the javascript code executes*/
+        /*this basically means that we want to position the topnav relative tosthe screen size*/
+        position: relative;
+    }
+    ul.topnav.responsive li{
+        /*what the inline display means is that we want them to be directly on one row or column*/
+        display: inline;
+        float: none;
+        /*we had a float of none here because scrolling up we set ul.topnav li to float left now we make it none for the mobile purpose*/
+    }
+    ul.topnav.responsive li a{
+        /*what this does is to make the li a items to align on the left side and appear in a bloack format*/
+        display: block;
+        text-align: left;
+    }
+    ul.topnav.responsive li.dropdownIcon{
+        /*to make sure that the dropdownicon stays in place we set the position to absolute and top and right to 0 so in this way it won't budge from the top nor the right*/
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    /*using the inspect tool in the browser we check if it is mobile compatible and address all the errors */
+    .col-6,.col-4,.col-7,.col-5{
+        /*checking it mobile state we addressed this error that when in smaller screen size it sets the col widths smaller*/
+        width: 100%;
+        margin: 0;
+    }
+    
+    div.box{
+        padding: 5px;
+        /*setting the padding will disable any inheritance from our custom styles in the desktop one*/
+        display: block;
+        /*just to handle any error it's best to set things like display of block to make sure that they stack on top each other*/
+    }
+    
+    div.leftside-col,div.rightside-col{
+        margin: 5px;
+    }
+    input[type="text"]{
+        width: 300px;
+    }
+    div video.mediakept{
+        /*we want the video to stay in it's normal postion*/
+        position: relative;
+        width: 100%;
+        /*occupy the total screen width*/
+        margin: 0;
+        /*setting a margin of 0 to handle any space the browser makes*/
+        overflow: hidden;
+        /*to prevent any side-to-side scrollbar set overflow to hidden*/
+    }
+    
+    header h1.section2header {
+        font-size: 35px;
+    }
+    
+    article p {
+        font-size: 25px;
+    }
+    
+    div.iosicon {
+        margin: 10px;
+        /*we couldn't put this on the img as this will force the img out of that 100% width but putting it on the parent is better as the parent doesn't occupy the whole width*/
+    }
+    
+    div.iosicon img {
+        width: 100%;
+        /*for this we sed width of 100% just to put the img to take the whole width*/ 
+    }
+    
+    div.col3specific {
+        /*for the footer col in mobile state we don't want a width of 100% for each rather we want it to be smaller*/
+        width: 50%;
+        display: block;
+        
+    }
+    
+    
+    
+}
+
+
