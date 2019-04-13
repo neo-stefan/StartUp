@@ -31,5 +31,16 @@
 # boom we are there 
 
 ### git remote -v shows us the repository we have on our server github 
-# nothing shows just use git remote add name ssh copied from the github 
-# repository we copied   
+# nothing shows just use git remote add name-of-the-remote repository we 
+# want to give it, ssh copied from the github repository,
+
+### git pull the-name-we-gave the remote server, the branch where the 
+# file we wish to get is. this will bring the file to our local machine 
+# also this will merge the repository on our machine with github server
+# though git fetch same info we put beside git pull and git merge do the 
+# same as git pull though git pull is better as it does both fetch and 
+# merge functions.
+
+
+
+   
