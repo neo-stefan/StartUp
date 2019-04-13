@@ -27,4 +27,9 @@
 ### branch is like a folder where the commits are kept
 ### git branch will display the brach where we are
 
-  
+### to switch between branches use git checkout branchname to go to and 
+# boom we are there 
+
+### git remote -v shows us the repository we have on our server github 
+# nothing shows just use git remote add name ssh copied from the github 
+# repository we copied   
